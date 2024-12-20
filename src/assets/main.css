@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+table {
+	@apply table-auto overflow-x-auto w-full;
+}
+table tr {
+	@apply  even:bg-cyan-500/10 bg-cyan-500/5        transition-all;
+}
+table th {
+	@apply bg-cyan-500/20    py-4 whitespace-nowrap text-start font-bold  px-5  text-sm text-cyan-500;
+}
+table td {
+	@apply text-white py-4 px-5  text-sm whitespace-nowrap;
+}
+
+.page-heading{
+	@apply text-white w-max text-3xl border-s-4 ps-5 border-cyan-500     py-1
+}
+label{
+	@apply text-white text-sm mb-1.5 block
+}
+form{
+	@apply grid gap-y-3 max-w-md
+}
+
+input,select{
+	@apply h-10
+}
+input,select ,textarea{
+	@apply  flex items-center px-3 w-full  bg-slate-800 text-white  text-sm rounded-md
+}
