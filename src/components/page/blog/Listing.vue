@@ -40,7 +40,7 @@
                             <div class="flex items-center gap-3 justify-end">
                                 <RoundedButton class="border-blue-500 text-blue-500" :to="`/blogs/${blog.id}`"
                                     icon="fa6-regular:pen-to-square" />
-                                <RoundedButton class="border-red-500 text-red-500" @click="deleteBlog"
+                                <RoundedButton class="border-red-500 text-red-500" @click="deleteBlog(blog.id)"
                                     icon="fa6-regular:trash-can" />
                             </div>
                         </td>
